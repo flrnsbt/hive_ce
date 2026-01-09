@@ -254,7 +254,7 @@ class CollectionBox<V> implements implementation.CollectionBox<V> {
   }
 
   bool __isPrimitive(Object? val) {
-    return val is num || val is bool || val is String;
+    return val is num || val is bool || val is String || val == null;
   }
 
   bool _isPrimitiveIterable(Iterable val) {
